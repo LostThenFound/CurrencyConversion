@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/labelUnit"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="200dp"
+        android:text="Currency: "
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        />
+
+    <EditText
+        android:id="@+id/etUnit"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_toRightOf="@id/labelUnit"
+        android:layout_alignBottom="@id/labelUnit"
+        android:textSize="30dp"
+        />
+    <TextView
+        android:id="@+id/labelFactor"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="200dp"
+        android:text="Factor: "
+        android:textSize="30dp"
+        android:layout_below="@+id/labelUnit"
+        />
+
+    <EditText
+        android:id="@+id/etFactor"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_toRightOf="@id/labelFactor"
+        android:layout_alignBottom="@id/labelFactor"
+        android:textSize="30dp"
+        android:inputType="numberDecimal"
+        />
+    <Button
+        android:id="@+id/insertButton"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:text="Insert"
+        android:layout_below="@id/labelFactor"
+        android:onClick="insert"
+        />
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:text="Close"
+        android:layout_below="@id/insertButton"
+        android:onClick="close"
+        />
+</RelativeLayout>
